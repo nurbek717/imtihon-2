@@ -6,9 +6,9 @@
 	justify-content: space-between;
 	align-items: center;
 }
-.header__inner{
-	display: flex;
-	align-items: center;
+ .header__inner{
+ 	display: flex;
+ 	align-items: center;
 }
 .header__list{
 	@include reset-list;
@@ -63,17 +63,14 @@
 }
 
 // mabilll-----
-@media only screen and (max-width: 656px) {
+@media only screen and (max-width: 654px) {
 	.header__list{
 		display: none;
 	} 
 	.button{
 		display: none;
 	}
-	.header__bag{
-		justify-content: left;
-	}
-	
+
 	.header__img{
 		margin-left:  200px;;
 	}
@@ -87,6 +84,9 @@
 	}
 	
 	// .header--open------
+	// .header--open .header__bag{
+	// 	display:block;
+	// }
 	.header--open  .header__nav{
 		position: fixed;
 		z-index: 1;
@@ -108,7 +108,7 @@
 		position: relative;
 		z-index: 1;
 		top: 350px;
-		left: -320px;
+		left: -300px;
 		display: block;
 	}
 	.header__item:nth-child(1){
@@ -136,8 +136,6 @@
 	}
 }
 
-
-
 @media only screen and (max-width: 490px){
 	.header__img{
 		margin-left:  150px;
@@ -162,6 +160,8 @@
 		left: -230px;
 		display: block;
 		
+	}
+	.button{
 	}
 }
 @media only screen and (max-width: 325px){

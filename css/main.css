@@ -516,17 +516,12 @@ main {
   cursor: pointer;
 }
 
-@media only screen and (max-width: 656px) {
+@media only screen and (max-width: 654px) {
   .header__list {
     display: none;
   }
   .button {
     display: none;
-  }
-  .header__bag {
-    -webkit-box-pack: left;
-        -ms-flex-pack: left;
-            justify-content: left;
   }
   .header__img {
     margin-left: 200px;
@@ -564,7 +559,7 @@ main {
     position: relative;
     z-index: 1;
     top: 350px;
-    left: -320px;
+    left: -300px;
     display: block;
   }
   .header__item:nth-child(1) {
@@ -628,6 +623,278 @@ main {
     top: 350px;
     left: -220px;
     display: block;
+  }
+}
+
+footer {
+  background-color: #495567;
+}
+
+.footer__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__heading {
+  display: block;
+  max-width: 441px;
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 48px;
+  color: #ffffff;
+}
+
+.footer__list1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+}
+
+.footer__apestor {
+  width: 100%;
+  max-width: 159px;
+  background-color: #E5ECF4;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 8px 15px;
+}
+
+.footer__apestor::before {
+  display: inline-block;
+  content: "";
+  width: 26.27px;
+  height: 21.27px;
+  background-image: url("../../images/apistore.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-right: 8px;
+}
+
+.footer__paragrif {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 10px;
+  margin: 0px;
+  color: #495567;
+}
+
+.footer__text {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 0;
+  line-height: 24px;
+  color: #495567;
+}
+
+.footer__playmarket {
+  width: 100%;
+  max-width: 182px;
+  background-color: #E5ECF4;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 8px 15px;
+  margin-left: 18px;
+}
+
+.footer__playmarket::before {
+  display: inline-block;
+  content: "";
+  width: 28.27px;
+  height: 27.27px;
+  background-image: url("../../images/mlayarket.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-right: 8px;
+}
+
+.footer__bag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__item:nth-child(1) {
+  margin-left: 58px;
+}
+
+.footer__item + .footer__item {
+  margin-left: 32px;
+}
+
+.footer__lenk {
+  text-decoration: none;
+  color: #939CAA;
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.footer__lenk:hover {
+  color: #FCB72B;
+}
+
+.footer-bottom {
+  background-color: #333A44;
+  padding: 36px 0;
+}
+
+.footer__media-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__media-item:nth-child(2n) {
+  margin: 0 24px;
+}
+
+.footer__inner-link {
+  color: #83888F;
+}
+
+.footer__inner-link:hover {
+  color: #FEFCF7;
+}
+
+.footer__inner-link .header__inner-link {
+  color: #FEFCF7;
+}
+
+.footer__lenk {
+  color: #ffffff;
+}
+
+.footer__lenk:hover {
+  color: #f09e08;
+}
+
+@media only screen and (max-width: 872px) {
+  .footer__top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer__heading {
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 62px;
+  }
+  .footer__list1 {
+    margin-bottom: 64px;
+  }
+}
+
+@media only screen and (max-width: 590px) {
+  .footer__bag {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer__img {
+    margin-bottom: 41px;
+  }
+  .footer__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer__item {
+    text-align: center;
+  }
+  .footer__item:nth-child(1) {
+    margin-left: 0px;
+  }
+  .footer__item + .footer__item {
+    margin-left: 0px;
+    margin-top: 14px;
+  }
+  .footer__media-list {
+    margin-top: 87px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .footer__heading {
+    font-size: 32px;
   }
 }
 /*# sourceMappingURL=main.css.map */
