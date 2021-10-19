@@ -6,21 +6,21 @@
 }
 
 .content__heading{
- max-width: 500px;
- font-family: 'Space Mono';
- font-style: normal;
- font-weight: bold;
- font-size: 48px;
- color: $dark-navy;
+  max-width: 500px;
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  color: $dark-navy;
 }
 .content__parafrif{
- max-width: 500px;
- font-family: 'Lexend Deca';
- font-style: normal;
- font-weight: normal;
- font-size: 15px;
- line-height: 25px;
- color:$dim-griy;
+  max-width: 500px;
+  font-family: 'Lexend Deca';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 25px;
+  color:$dim-griy;
 }
 .bg__img{
   border-radius: 50%;
@@ -29,7 +29,8 @@
 .class::before{
   content: "";
   display: inline-block;
-  width: 740px;
+  width: 100%;
+  max-width: 740px;
   height: 150px;
   position: absolute;
   transform: translate(110%, 150%);
@@ -38,7 +39,8 @@
 .class-2::before{
   content: "";
   display: inline-block;
-  width: 740px;
+  width: 100%;
+  max-width: 740px;
   height: 150px;
   position: absolute;
   transform: translate(-150%);
@@ -46,12 +48,59 @@
   background-repeat: no-repeat;
 }
 .class-3::before{
- content: "";
- display: inline-block;
- width: 740px;
- height: 150px;
- position: absolute;
- transform: translate(170%,);
- background-image: url("../../images/strelka-chap.png");
+  content: "";
+  display: inline-block;
+  width: 740px;
+  height: 150px;
+  position: absolute;
+  transform: translate(150%,);
+  background-image: url("../../images/strelka-chap.png");
   background-repeat: no-repeat;
+}
+
+@media only screen and (max-width:1360px){
+  .class-3::before{
+    display: none;
+  }
+}
+@media only screen and (max-width:900px){
+  .content__bag{
+    flex-direction: column-reverse;
+  }
+  .content--bag-2{
+    flex-direction: column;
+  }
+  .class::before{
+     width: 550px;
+  }
+  .class::before{
+    transform: translate(-20%, -150%);
+  }
+  .class-3::before{
+    transform: translate(20%,-300%);
+  }
+  .bg__img{
+    width: 100%;
+    max-width: 311px;
+    height: 311px;
+  }
+  .content__heading{
+     text-align: center;
+  }
+  .content__parafrif{
+    text-align: center;
+  }
+  .img--bottom{
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width:425px){
+  .content__heading{
+    font-size: 32px;
+
+ }
+ .content__parafrif{
+   font-size: 15px;
+ }
 }
