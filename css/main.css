@@ -626,6 +626,293 @@ main {
   }
 }
 
+.hero {
+  padding-top: 153px;
+  padding-bottom: 385px;
+  padding-right: 605px;
+  padding-left: 165px;
+  background-image: url("../../images/Bitmap.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 160px;
+}
+
+.hero__inner::before {
+  position: relative;
+  z-index: 1;
+  left: -300px;
+  top: 50px;
+  display: inline-block;
+  content: "";
+  width: 100%;
+  max-width: 205px;
+  height: 27.27px;
+  background-image: url("../../images/tug'riciz.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.hero__inner::after {
+  position: relative;
+  z-index: 1;
+  left: 450px;
+  bottom: 135px;
+  display: inline-block;
+  content: "";
+  width: 100%;
+  max-width: 945px;
+  height: 130.27px;
+  background-image: url("../../images/strelka.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.hero__heading {
+  max-width: 520px;
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 56px;
+  color: #ffffff;
+  margin-top: 0px;
+  margin-bottom: 40px;
+  margin-right: 0px;
+}
+
+.hero__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 405px;
+  font-family: 'Lexend Deca';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  color: #ffffff;
+  margin-top: 0px;
+  margin-bottom: 40px;
+}
+
+@media only screen and (max-width: 1207px) {
+  .hero {
+    padding-top: 153px;
+    padding-bottom: 385px;
+    padding-right: 0px;
+    padding-left: 165px;
+  }
+  .hero__inner::before {
+    display: none;
+  }
+  ::after {
+    -webkit-transform: translate(-200%);
+            transform: translate(-200%);
+    top: 100px;
+  }
+}
+
+@media only screen and (max-width: 834px) {
+  .hero {
+    padding: 137px 0;
+  }
+  .hero__heading {
+    max-width: 573px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  .button.salom {
+    display: none;
+  }
+  .hero__text {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .hero__inner::before {
+    display: none;
+  }
+  ::after {
+    -webkit-transform: translate(-100%);
+            transform: translate(-100%);
+    top: 100px;
+  }
+}
+
+@media only screen and (max-width: 569px) {
+  .hero__heading {
+    font-size: 35px;
+  }
+  .hero__text {
+    font-size: 15px;
+  }
+  .hero__inner::before {
+    display: none;
+  }
+  ::after {
+    -webkit-transform: translate(-200%);
+            transform: translate(-200%);
+    top: 100px;
+  }
+}
+
+.how-it-works__line {
+  width: 100%;
+  max-width: 80%;
+  position: relative;
+  display: block;
+  background-color: #E5ECF4;
+  border: 6px solid #E5ECF4;
+  padding: 0;
+  margin-bottom: 100px;
+}
+
+.how-it-works__line::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  max-width: 96px;
+  height: 96px;
+  background-image: url("../../images/telfon.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  -webkit-transform: translate(100%, -50%);
+          transform: translate(100%, -50%);
+}
+
+.how-it-works__line::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 96px;
+  height: 96px;
+  background-image: url("../../images/boy.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  right: 0;
+  top: 0;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+}
+
+.how-it-works__sub-line::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 96px;
+  height: 96px;
+  background-image: url("../../images/skutur.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  right: 50%;
+  top: 0;
+  -webkit-transform: translate(130%, -50%);
+          transform: translate(130%, -50%);
+}
+
+.group-icon__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 100px;
+}
+
+.group-icon__heading {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: #495567;
+}
+
+.group-icon__text {
+  max-width: 350px;
+  font-family: 'Lexend Deca';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 25px;
+  color: #939CAA;
+}
+
+@media only screen and (max-width: 1081px) {
+  .group-icon__item + .group-icon__item {
+    margin-left: 10px;
+  }
+}
+
+@media only screen and (max-width: 856px) {
+  .group-icon__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .group-icon__text {
+    max-width: 398px;
+  }
+}
+
+@media only screen and (max-width: 595px) {
+  .how-it-works__steps {
+    display: none;
+  }
+  .group-icon__heading {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 0;
+  }
+  .group-icon__text {
+    margin-top: 0;
+    text-align: center;
+    font-size: 15px;
+  }
+  .group-icon__item::before {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 56px;
+    height: 56px;
+    background-image: url("../../images/telfon.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 15px;
+  }
+  .group-icon__item:nth-child(2)::before {
+    background-image: url("../../images/skutur.svg");
+  }
+  .group-icon__item:nth-child(3)::before {
+    background-image: url("../../images/boy.svg");
+  }
+}
+
 footer {
   background-color: #495567;
 }

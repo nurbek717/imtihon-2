@@ -1,0 +1,129 @@
+
+ .how-it-works__line {
+  width: 100%;
+  max-width: 80%;
+  position: relative;
+  display: block;
+  background-color: $Light-Grey;
+  border: 6px solid $Light-Grey;
+  padding: 0;
+  margin-bottom: 100px;
+}
+.how-it-works__line::before {
+ content: "";
+ position: absolute;
+ display: block;
+ width: 100%;
+ max-width: 96px;
+ height: 96px;
+ background-image: url('../../images/telfon.svg');
+ background-position: center;
+ background-size: contain;
+ background-repeat: no-repeat;
+ border-radius: 50%;
+ transform: translate( 100%, -50%);
+}
+
+.how-it-works__line::after {
+ content: "";
+ position: absolute;
+ display: block;
+ width: 96px;
+ height: 96px;
+ background-image: url('../../images/boy.svg');
+ background-position: center;
+ background-size: contain;
+ background-repeat: no-repeat;
+ border-radius: 50%;
+ right: 0;
+ top: 0;
+ transform: translate( 50%, -50%);
+}
+
+.how-it-works__sub-line::before {
+ content: "";
+ position: absolute;
+ display: block;
+ width: 96px;
+ height: 96px;
+ background-image: url('../../images/skutur.svg');
+ background-position: center;
+ background-size: contain;
+ background-repeat: no-repeat;
+ right: 50%;
+ top: 0;
+ transform: translate( 130%, -50%);
+}
+.group-icon__list{
+  @include reset-list;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 100px;
+}
+       
+.group-icon__heading{
+ font-family: 'Space Mono';
+ font-style: normal;
+ font-weight: bold;
+ font-size: 24px;
+ line-height: 28px;
+ color: #495567;
+}
+.group-icon__text{
+ max-width: 350px;
+ font-family: 'Lexend Deca';
+ font-style: normal;
+ font-weight: normal;
+ font-size: 15px;
+ line-height: 25px;
+ color: #939CAA;
+}
+@media only screen and (max-width:1081px){
+ .group-icon__item + .group-icon__item {
+    margin-left: 10px
+ }
+}
+@media only screen and (max-width:856px){
+   .group-icon__list{
+    flex-direction: column;   
+ }
+ .group-icon__text{
+   max-width:  398px;;
+ }
+}
+
+@media only screen and (max-width:595px) {
+ .how-it-works__steps{
+  display: none;
+ }
+ .group-icon__heading{
+   text-align: center;
+   font-size: 24px;
+   margin-top: 0;
+ }
+ .group-icon__text{
+  margin-top: 0;
+   text-align: center;
+   font-size: 15px;
+ }
+ .group-icon__item::before {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 56px;
+  height: 56px;
+  background-image: url('../../images/telfon.svg');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-bottom: 15px;
+ }
+ .group-icon__item:nth-child(2)::before{
+  background-image: url('../../images/skutur.svg');
+ }
+ .group-icon__item:nth-child(3)::before{
+  background-image: url('../../images/boy.svg');
+ }
+}

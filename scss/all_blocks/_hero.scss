@@ -1,0 +1,134 @@
+.hero{
+ padding-top: 153px;
+ padding-bottom: 385px;
+ padding-right: 605px;
+ padding-left: 165px; 
+ background-image: url('../../images/Bitmap.jpg');
+ background-position: center center;
+ background-size: cover;
+ background-repeat: no-repeat;
+ margin-bottom: 160px;
+}
+.hero__inner{
+ &::before{
+  position: relative;
+  z-index: 1;
+  left: -300px;
+  top: 50px;
+  display: inline-block;
+  content: "";
+  width: 100%;
+  max-width: 205px;
+  height: 27.27px;
+  background-image:url('../../images/tug\'riciz.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:contain;
+  flex-shrink: 0;
+ }
+ 
+ &::after{
+  position: relative;
+  z-index: 1;
+  left: 450px;
+  bottom: 135px;
+  display: inline-block;
+  content: "";
+  width: 100%;
+  max-width: 945px;
+  height: 130.27px;
+  background-image:url('../../images/strelka.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:contain;
+  flex-shrink: 0;
+ }
+}
+.hero__heading{
+ max-width: 520px;
+ font-family: 'Space Mono';
+ font-style: normal;
+ font-weight: bold;
+ font-size: 56px;
+ line-height: 56px;
+ color: $what;
+ margin-top: 0px;
+ margin-bottom: 40px;
+ margin-right: 0px;
+}
+.hero__text{
+ display: flex;
+ align-items: center;
+ max-width: 405px;
+ font-family: 'Lexend Deca';
+ font-style: normal;
+ font-weight: normal;
+ font-size: 15px;
+ color: $what;
+ margin-top: 0px;
+ margin-bottom: 40px;
+}
+
+
+@media only screen and (max-width:1207px) {
+ .hero{
+  padding-top: 153px;
+  padding-bottom: 385px;
+  padding-right: 0px;
+  padding-left: 165px;
+ }
+ .hero__inner{
+  &::before{
+   display: none;
+  }
+ }
+ &::after{
+  transform: translate(-200%);
+  top: 100px;
+ }
+}
+@media only screen and (max-width:834px) {
+ .hero{
+  padding:137px 0;
+ }
+ .hero__heading{
+  max-width: 573px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 24px;
+ }
+ .button.salom{
+  display: none;
+ }
+ .hero__text{
+  margin: 0 auto;
+  text-align: center;
+ }
+ .hero__inner{
+  &::before{
+   display: none;
+  }
+ }
+ &::after{
+  transform: translate(-100%);
+  top: 100px;
+ }
+}
+
+@media only screen and (max-width:569px) {
+ .hero__heading{
+  font-size: 35px;
+ }
+ .hero__text{
+  font-size: 15px;
+ }
+ .hero__inner{
+  &::before{
+   display: none;
+  }
+ }
+ &::after{
+  transform: translate(-200%);
+  top: 100px;
+ }
+}
