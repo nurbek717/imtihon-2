@@ -1,0 +1,57 @@
+.content__bag{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 200px;
+}
+
+.content__heading{
+ max-width: 500px;
+ font-family: 'Space Mono';
+ font-style: normal;
+ font-weight: bold;
+ font-size: 48px;
+ color: $dark-navy;
+}
+.content__parafrif{
+ max-width: 500px;
+ font-family: 'Lexend Deca';
+ font-style: normal;
+ font-weight: normal;
+ font-size: 15px;
+ line-height: 25px;
+ color:$dim-griy;
+}
+.bg__img{
+  border-radius: 50%;
+}
+
+.class::before{
+  content: "";
+  display: inline-block;
+  width: 740px;
+  height: 150px;
+  position: absolute;
+  transform: translate(110%, 150%);
+  background-image: url("../../images/strelka-chap.png");
+}
+.class-2::before{
+  content: "";
+  display: inline-block;
+  width: 740px;
+  height: 150px;
+  position: absolute;
+  transform: translate(-150%);
+  background-image: url("../../images/rasim-burchak.png");
+  background-repeat: no-repeat;
+}
+.class-3::before{
+ content: "";
+ display: inline-block;
+ width: 740px;
+ height: 150px;
+ position: absolute;
+ transform: translate(170%,);
+ background-image: url("../../images/strelka-chap.png");
+  background-repeat: no-repeat;
+}
