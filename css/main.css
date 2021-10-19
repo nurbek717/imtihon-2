@@ -1055,6 +1055,16 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.footer__top::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  max-width: 1111px;
+  height: 350px;
+  -webkit-transform: translate(40%, 0%);
+          transform: translate(40%, 0%);
   background-image: url("../../images/bg-circle.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -1267,6 +1277,12 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .footer__top::before {
+    width: 872px;
+    height: 250px;
+    -webkit-transform: translate(20%, 60%);
+            transform: translate(20%, 60%);
   }
   .footer__heading {
     text-align: center;

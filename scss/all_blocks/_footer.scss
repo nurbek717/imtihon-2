@@ -5,10 +5,20 @@ footer{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-image: url('../../images/bg-circle.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
+  
+  &::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    max-width: 1111px;
+    height: 350px;
+    transform: translate(40%, 0%);
+    background-image: url('../../images/bg-circle.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
   
 }
 .bg{
@@ -185,7 +195,15 @@ footer{
     @media only screen and (max-width: 872px) {
       .footer__top{
         flex-direction: column;
+
+
+        &::before{
+          width: 872px;
+          height: 250px;
+          transform: translate(20%,60%);
+        }
       }
+
       .footer__heading{
         text-align: center;
         margin-bottom: 40px;
@@ -194,6 +212,10 @@ footer{
       .footer__list1{
         margin-bottom: 64px;
       }
+    }
+
+    @media only screen and (max-width:768px){
+       
     }
     @media only screen and (max-width: 590px) {
       .footer__bag{
